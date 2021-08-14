@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Tse Man Kit \\ Michael} % Your name
+\cvjobtitle{} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+852 6502 8747} % Phone number
+\cvsite{https://github.com/michaeltmk} % Personal website
+\linkedin{https://www.linkedin.com/in/man-kit-michael-tse-4013a5176/} % linkedin link
+\cvmail{tse.man.kit.michael@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+%project URL
+\IBMDatasciURL{https://shorturl.at/tDFJV}
+\OCRURL{https://github.com/michaeltmk/Captcha_cracker}
+\TempRHURL{https://github.com/michaeltmk/StandAlone_T-H_sensor}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{A quick learner, explorer, with Science and Engineering background, who have a great interest in new technology that may change the world. I am interested in working for a fast-growing and challenging company that will encourage my growth and development, so as to be the most efficient and effective employee I can possibly be.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+\skills{Python, JavaScript, TensorFlow, Keras, Pytorch, apache spark, SQL, NoSQL, Elasticsearch, Arduino, Raspberry Pi, LaTeX, Matlab, docker, k8s, databricks, NGINX}
+
+%----------------------------------------------------------------------------------------
+%	 LANGUAGES
+%----------------------------------------------------------------------------------------
+
+% languages bar section, each skill must have a value between 0 an 6 (float)
+\languages{{German/3},{English/4.3},{Mandarin/4},{Cantonese/6}}
+
+%------------------------------------------------
+
+% languages text section, each skill must have a value between 0 an 6
+\languagestext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\education{
+    \begin{twentyshort} % Environment for a short list with no descriptions
+        \twentyitemshort{2019-2021}{MBA in Quantic School of Business and Technology}
+    	\twentyitemshort{2017-2019}{MSc in Mechanical Engineering, The Hong Kong Polytechnic University}
+    	\twentyitemshort{2010-2015}{BSc in Maths. \& Phys., The University of Hong Kong}
+    	%\twentyitemshort{<dates>}{<title/description>}
+    \end{twentyshort}
+} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem{2021-now}{AI Robotic Engineer}{Varadise, Hong Kong}{Managed IoT sensors and networks (Raspberry Pi, Arduino, LoRa, sigfox) development and deployments. \\Managed the robotic simulation development. (ROS, Gazebo)}
+    
+    \twentyitem{2020-2021}{Data Engineer}{DreamsAi, Hong Kong}{Project based programming, include web scraping, data migration, server infrastructure, and AI development}
+    
+	\twentyitem{2017-2020}{Technical Support Engineer}{PTC International Limited, Hong Kong}{Provided technical support, demonstration, documentation and troubleshooting.  \\Customized data-loggers with alarm function or dashboard etc. written in Python (Raspberry Pi, Arduino, or any other programmable data-logger). }
+	
+% 	\twentyitem{2015-2017}{Technical Engineer}{Earth Products China Limited, Hong Kong}{Provided technical support, demonstration, documentation and troubleshooting. \\Responsible for developing new calibration methods for HOKLAS certification which involved experimental studies and data analysis. }
+
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{MOOCs}
+
+\begin{twenty} % Environment for a list with descriptions
+     \twentyitem{Jun 2021}{Machine Learning Engineering for Production (MLOps) Specialization}{Deeplearning.ai}{\emph{Learnt how to deploy ML in production, such as data lifecycle, model pipeline as well as deployment pipeline.}}
+
+    \twentyitem{Jun 2020}{IBM AI Engineering Specialization}{IBM}{\emph{Learnt to use SciPy, ScikitLearn, apache spark, Keras, PyTorch.}}
+    
+	\twentyitem{Mar 2020}{IBM Data Science Specialization}{IBM}{\emph{Understood the fundamental theories of data science. Learnt to use the ibm cloud, cloud programming, SQL, pandas library, geojson data and beautiful soup package. Link to the capstone project: {\href{\IBMDatasciURL}{Analysis of population and Venue distribution in Hong Kong}}}}
+	
+	\twentyitem{Feb 2020}{Deep Learning Specialization}{Deeplearning.ai}{\emph{Understood and Practiced on object detection, face recognition, neural style transfer, language translation, speech to word translation, ResNet, Inception, R-CNN, YOLO, CTC, optimizing metrics, dataset distribution strategy, IoU, Bleu score.}}
+	
+	\twentyitem{Nov 2019}{Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning Certificate}{Deeplearning.ai}{\emph{Practiced on CV, NLP, and Sequence Prediction using TensorFlow. \\Learnt to the concepts of CNN, RNN/LSTM, dropout layer, batch normalization, learning rate adjustment etc.}}
+	
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{twenty} % Environment for a short list with no descriptions
+	\twentyitem{2021}{Telegram Bot}{}{\emph{Chat bot which can report weather by command and submit e-forms. Controlled devices and sent alert of IoT projects.}}
+    
+	\twentyitem{2020}{Analysis of population and Venue distribution in Hong Kong}{IBM}{\emph{Used K-means clustering and data visualization method to analysis the relationship between population and venues distribution in HK. \\\url{\IBMDatasciURL}}}
+	
+	\twentyitem{2019-2020}{OCR (captchas breaking)}{}{\emph{Demonstrated on computer vision aim with CNN, data collection and data argumentation techniques, written in Tensorflow, python. \\Trained on captchas collected on a target website and a captchas simulator. \\\url{\OCRURL}}}
+	
+	\twentyitem{2019-2020}{Wireless Temperature and RH sensor}{}{\emph{Connected to a server for data storage through wireless. \\\url{\TempRHURL}}}
+	
+% 	\twentyitem{2019}{Customized solutions for weather station}{PTC}{\emph{Was a Raspberry-Pi data logger, written in python. Automated using cron. Provided TTL alarm output, serial digital signal input and backup to server function. }}
+	
+% 	\twentyitem{2019}{Telegram Bot}{}{\emph{Automated using cron. Reported weather of Hong Kong by command. Served as an alarm function for other scripts}}
+	
+	%\twentyitem{<dates>}{<title>}{<location>}{\emph{<description>}}
+	%\twentyitem{<dates>}{<title>}{<location>}{\emph{<description>}}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
